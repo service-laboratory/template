@@ -3,8 +3,8 @@ from litestar import get
 from litestar.controller import Controller
 from msgspec import Struct
 from advanced_alchemy.extensions.litestar.providers import create_service_dependencies
-from services.auth.models import UserModel
-from services.auth.services import AuthService
+from .models import UserModel
+from .services import AuthService
 from typing import Annotated
 from advanced_alchemy.filters import FilterTypes
 from litestar.params import Dependency

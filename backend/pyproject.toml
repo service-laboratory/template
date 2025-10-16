@@ -12,7 +12,8 @@ dependencies = [
     "polyfactory>=2.22.2",
     "pydantic>=2.11.7",
     "pydantic-settings>=2.10.1",
-    "uvicorn[standart]>=0.35.0",
+    "service-laboratory==3.1.2",
+    "uvicorn>=0.35.0",
 ]
 
 [tool.ruff]

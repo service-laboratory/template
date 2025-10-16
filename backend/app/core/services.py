@@ -1,5 +1,6 @@
 import importlib
 from app.core.settings import settings
+from app.core.database import session_maker
 
 
 class Services:
@@ -9,7 +10,7 @@ class Services:
 
         for path in service_paths:
             service = importlib.import_module(path)
-            service.init_app(self)
+            service.init_app(self, session_maker)
 
 
 services = Services(settings.services)

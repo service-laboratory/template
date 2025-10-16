@@ -1,4 +1,3 @@
-from litestar import Litestar
 from litestar import Router
 
 
@@ -27,5 +26,5 @@ book_router = Router(
 )
 
 
-def init_app(services):
+def init_app(services, *args, **kwargs):
     services.handlers.append(book_router)
