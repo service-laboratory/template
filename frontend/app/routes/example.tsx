@@ -7,6 +7,6 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
-  return <h1>service template</h1>;
+export default function Example() {
+  return <h1>service template example</h1>;
 }
