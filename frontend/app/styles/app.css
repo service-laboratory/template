@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import './theme.css';
+@source "../../node_modules/@service_laboratory";
 
 @theme {
   --font-sans:
