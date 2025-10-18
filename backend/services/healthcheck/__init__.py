@@ -3,6 +3,7 @@ from litestar import get
 
 @get("/healthcheck")
 async def healthcheck() -> dict:
+    abc
     return {"status": "ok"}
 
 
