@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "service_laboratory"
-version = "4.0.4"
+version = "4.0.5"
 description = "Service laboratory packages"
 readme = "README.md"
 

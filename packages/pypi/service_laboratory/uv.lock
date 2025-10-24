@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.12"
 
 [[package]]
@@ -824,7 +824,7 @@ wheels = [
 
 [[package]]
 name = "service-laboratory"
-version = "4.0.4"
+version = "4.0.5"
 source = { editable = "." }
 dependencies = [
     { name = "advanced-alchemy" },

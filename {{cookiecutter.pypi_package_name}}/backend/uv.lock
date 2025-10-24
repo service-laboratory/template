@@ -121,7 +121,7 @@ requires-dist = [
     { name = "pytest-asyncio", specifier = ">=0.24.0" },
     { name = "pytest-asyncio", marker = "extra == 'test'", specifier = "==0.24.0" },
     { name = "sentry-sdk", extras = ["litestar"], specifier = ">=2.42.0" },
-    { name = "service-laboratory", specifier = "==4.0.3" },
+    { name = "service-laboratory", specifier = "==4.0.4" },
     { name = "uvicorn", specifier = ">=0.35.0" },
 ]
 provides-extras = ["dev", "test"]
@@ -710,7 +710,7 @@ litestar = [
 
 [[package]]
 name = "service-laboratory"
-version = "4.0.3"
+version = "4.0.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "advanced-alchemy" },
@@ -721,9 +721,9 @@ dependencies = [
     { name = "sqlalchemy" },
     { name = "uvicorn" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/74/61/667f2788fdb876fda4bc0d25201d5756a701e69e65f57965ea2a0de5ecfe/service_laboratory-4.0.3.tar.gz", hash = "sha256:cf69389b9dbac86f50d09363a105c6735925becc6aa0d99ff1e78ca1aff63ded", size = 53927, upload-time = "2025-10-21T17:20:09.112Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d4/89/79731e6a1554cb92aad0ef4db496b33734ee8b6baa501cfe6286b497ec36/service_laboratory-4.0.4.tar.gz", hash = "sha256:abfacc429e648da4805f78fe4c0b424965709213317a6f6a472263298f6f69b5", size = 54574, upload-time = "2025-10-24T09:35:28.674Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/66/de/346ccb062fceb07a9078142869de46ef46494c6929bffe361659f9af7d58/service_laboratory-4.0.3-py3-none-any.whl", hash = "sha256:274a24898a9a89c84ea724f6677766e935391c23782a9817f57a84d60a3382dd", size = 6241, upload-time = "2025-10-21T17:20:07.707Z" },
+    { url = "https://files.pythonhosted.org/packages/08/82/d076d14b3e2d901b86660ff91e65f5fe5769d0530908ef3473621b44adff/service_laboratory-4.0.4-py3-none-any.whl", hash = "sha256:a66eb8e86043fdddb764778362b4e5ccc4a06b51e30e263520fc6fad180eb67a", size = 6799, upload-time = "2025-10-24T09:35:27.126Z" },
 ]
 
 [[package]]

@@ -3,11 +3,10 @@ from logging.config import fileConfig
 
 from advanced_alchemy.base import UUIDAuditBase
 from alembic import context
+from core.settings import settings
 from sqlalchemy import pool
 from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import async_engine_from_config
-
-from app.plugins.settings import settings
 
 config = context.config
 config.set_main_option("sqlalchemy.url", settings.db_url)

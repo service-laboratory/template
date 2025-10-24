@@ -4,7 +4,6 @@ from litestar.openapi.spec import Components, SecurityScheme
 
 from .settings import settings
 
-
 openapi_config = OpenAPIConfig(
     components=[
         Components(
