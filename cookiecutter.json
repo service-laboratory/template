@@ -1,4 +1,5 @@
 {
   "project_slug": "{{ cookiecutter.pypi_package_name.replace('-', '_') }} slug",
-  "project_name": "Service Boilerplate"
+  "project_name": "Service Boilerplate",
+  "pypi_package_name": "python-boilerplate"
 }
