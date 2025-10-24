@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.12"
 
 [[package]]
@@ -90,6 +90,8 @@ dependencies = [
     { name = "polyfactory" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
+    { name = "pytest" },
+    { name = "pytest-asyncio" },
     { name = "sentry-sdk", extra = ["litestar"] },
     { name = "service-laboratory" },
     { name = "uvicorn" },
@@ -114,7 +116,9 @@ requires-dist = [
     { name = "polyfactory", specifier = ">=2.22.2" },
     { name = "pydantic", specifier = ">=2.11.7" },
     { name = "pydantic-settings", specifier = ">=2.10.1" },
+    { name = "pytest", specifier = ">=8.4.2" },
     { name = "pytest", marker = "extra == 'test'", specifier = ">=8.2.1" },
+    { name = "pytest-asyncio", specifier = ">=0.24.0" },
     { name = "pytest-asyncio", marker = "extra == 'test'", specifier = "==0.24.0" },
     { name = "sentry-sdk", extras = ["litestar"], specifier = ">=2.42.0" },
     { name = "service-laboratory", specifier = "==4.0.3" },

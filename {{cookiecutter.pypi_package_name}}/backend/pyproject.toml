@@ -12,6 +12,8 @@ dependencies = [
     "polyfactory>=2.22.2",
     "pydantic>=2.11.7",
     "pydantic-settings>=2.10.1",
+    "pytest>=8.4.2",
+    "pytest-asyncio>=0.24.0",
     "sentry-sdk[litestar]>=2.42.0",
     "service-laboratory==4.0.3",
     "uvicorn>=0.35.0",
