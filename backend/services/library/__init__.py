@@ -1,7 +1,4 @@
-from litestar import Router
-
-
-from litestar import get
+from litestar import Router, get
 from litestar.controller import Controller
 from msgspec import Struct
 
@@ -24,7 +21,3 @@ book_router = Router(
     path="/api/library",
     route_handlers=[BookController],
 )
-
-
-def init_app(services, *args, **kwargs):
-    services.handlers.append(book_router)

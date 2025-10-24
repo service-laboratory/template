@@ -1,15 +1,17 @@
+from auth.api import auth_router
+from auth.plugin import AuthPlugin
+from core.database import sqlalchemy_plugin
 from litestar import Litestar
-from app.core.database import sqlalchemy_plugin
-from app.core.openapi import openapi_config
-from app.core.tracing import init_tracing
-from app.core.services import services
+
+from app.plugins.error_tracking import init_error_tracking
+from app.plugins.openapi import openapi_config
 
 
 def create_app():
-    init_tracing()
+    init_error_tracking()
     app = Litestar(
-        route_handlers=services.handlers,
-        plugins=[sqlalchemy_plugin, *services.plugins],
+        route_handlers=[auth_router],
+        plugins=[sqlalchemy_plugin, AuthPlugin()],
         openapi_config=openapi_config,
         debug=True,
     )

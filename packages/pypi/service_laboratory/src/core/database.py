@@ -1,9 +1,8 @@
+from advanced_alchemy.base import UUIDAuditBase
+from litestar.plugins.sqlalchemy import SQLAlchemyAsyncConfig, SQLAlchemyPlugin
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 
-
-from litestar.plugins.sqlalchemy import SQLAlchemyAsyncConfig, SQLAlchemyPlugin
-from advanced_alchemy.base import UUIDAuditBase
-from app.core.settings import settings
+from .settings import settings
 
 config = SQLAlchemyAsyncConfig(
     connection_string=settings.db_url, create_all=True, metadata=UUIDAuditBase.metadata

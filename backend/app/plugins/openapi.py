@@ -2,7 +2,6 @@ from litestar.openapi import OpenAPIConfig
 from litestar.openapi.plugins import ScalarRenderPlugin
 from litestar.openapi.spec import Components, SecurityScheme
 
-
 openapi_config = OpenAPIConfig(
     components=[
         Components(

@@ -13,9 +13,17 @@ dependencies = [
     "pydantic>=2.11.7",
     "pydantic-settings>=2.10.1",
     "sentry-sdk[litestar]>=2.42.0",
-    "service-laboratory==3.1.2",
+    "service-laboratory==4.0.3",
     "uvicorn>=0.35.0",
 ]
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+test = [
+    "pytest>=8.2.1",
+    "pytest-asyncio==0.24.0",
+]
+
 
 [tool.ruff]
 builtins = ["_"]
