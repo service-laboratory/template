@@ -2,7 +2,7 @@ import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Service template" },
+    { title: "{{ cookiecutter.project_name }}" },
     { name: "description", content: "Template for fast start new services" },
   ];
 }
