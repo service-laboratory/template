@@ -1,3 +1,4 @@
 {
-  "project_name": "Python Boilerplate"
+  "project_slug": "{{ cookiecutter.service_name.replace('-', '_') }} slug",
+  "project_name": "Service Boilerplate"
 }
