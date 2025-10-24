@@ -5,7 +5,8 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 from .settings import settings
 
 config = SQLAlchemyAsyncConfig(
-    connection_string=settings.db_url, create_all=True, metadata=UUIDAuditBase.metadata
+    connection_string=settings.db_url,
+    metadata=UUIDAuditBase.metadata,
 )
 sqlalchemy_plugin = SQLAlchemyPlugin(config=config)
 
